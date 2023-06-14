@@ -1,19 +1,934 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-        <title>Spring Boot CSV file Application</title>
-        <link rel="stylesheet" href="/css/main.css" />
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8"><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-6X9R2YKRQJ&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//cse.google.com/adsense/search/async-ads.js"></script><script src="https://www.googletagmanager.com/gtm.js?id=GTM-TPK5P7R" async=""></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-c4b708570077b982b16",applicationID:"440769306"};;(()=>{"use strict";var e,t,n={8768:(e,t,n)=>{n.d(t,{T:()=>r,p:()=>i});const r=/(iPad|iPhone|iPod)/g.test(navigator.userAgent),i=r&&Boolean("undefined"==typeof SharedWorker)},880:(e,t,n)=>{n.d(t,{P_:()=>f,Mt:()=>p,C5:()=>s,DL:()=>m,OP:()=>_,lF:()=>E,Yu:()=>y,Dg:()=>g,CX:()=>c,GE:()=>b,sU:()=>j});var r=n(6797),i=n(4286);const o={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,r.Qy)(e,a[e],"info")}var u=n(2797);const d=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:u.oD,inactiveMs:u.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},session_replay:{enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10}}},l={};function f(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=(0,i.D)(t,d()),(0,r.Qy)(e,l[e],"config")}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var n=f(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const h={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function m(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!v[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return v[e]}function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=(0,i.D)(t,h),(0,r.Qy)(e,v[e],"loader_config")}const y=(0,r.mF)().o;var w=n(2374),A=n(1651);const x={buildEnv:A.Re,bytesSent:{},queryBytesSent:{},customTransaction:void 0,disabled:!1,distMethod:A.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(w._A?.performance?.timeOrigin||w._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+w._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof w._A.XMLHttpRequest?.prototype?.addEventListener,version:A.q4},D={};function _(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function j(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,x),(0,r.Qy)(e,D[e],"runtime")}function E(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},4286:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(8610);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(n).length?e:n;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?n[a]=i(e[a],t[a]):n[a]=e[a]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},1651:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>o,q4:()=>r});const r="1.234.0",i="PROD",o="CDN"},9557:(e,t,n)=>{n.d(t,{w:()=>o});var r=n(8610);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},4329:(e,t,n)=>{n.d(t,{L:()=>d,R:()=>c});var r=n(3752),i=n(7022),o=n(4045),a=n(2325);const s={};function c(e,t){const n={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,n)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const n=[...s[e]];function a(t){const n=e?r.ee.get(e):r.ee,a=o.X.handlers;if(n.backlog&&a){var s=n.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete a[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((e=>{let[t]=e;a(t)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],o=e[3],a=e[2];i.apply(o,a)}}))}},3752:(e,t,n)=>{n.d(t,{ee:()=>u});var r=n(6797),i=n(3916),o=n(7022),a=n(880),s="nr@context";let c=(0,r.fP)();var u;function d(){}function l(){return new d}function f(){u.aborted=!0,u.backlog={}}c.ee?u=c.ee:(u=function e(t,n){var r={},c={},g={},p=!1;try{p=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var h={on:b,addEventListener:b,removeEventListener:y,emit:m,get:A,listeners:w,context:v,buffer:x,abort:f,aborted:!1,isBuffering:D,debugId:n,backlog:p?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function v(e){return e&&e instanceof d?e:e?(0,i.X)(e,s,l):l()}function m(e,n,r,i,o){if(!1!==o&&(o=!0),!u.aborted||i){t&&o&&t.emit(e,n,r);for(var a=v(r),s=w(e),d=s.length,l=0;l<d;l++)s[l].apply(a,n);var f=_()[c[e]];return f&&f.push([h,e,n,a]),a}}function b(e,t){r[e]=w(e).concat(t)}function y(e,t){var n=r[e];if(n)for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)}function w(e){return r[e]||[]}function A(t){return g[t]=g[t]||e(h,t)}function x(e,t){var n=_();h.aborted||(0,o.D)(e,(function(e,r){t=t||"feature",c[r]=t,t in n||(n[t]=[])}))}function D(e){return!!_()[c[e]]}function _(){return h.backlog}}(void 0,"globalEE"),c.ee=u)},9252:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(3752).ee.get("handle");function i(e,t,n,i,o){o?(o.buffer([e],i),o.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4045:(e,t,n)=>{n.d(t,{X:()=>o});var r=n(9252);o.on=a;var i=o.handlers={};function o(e,t,n,o){a(o||r.E,i,e,t,n)}function a(e,t,n,i,o){o||(o="feature"),e||(e=r.E);var a=t[o]=t[o]||{};(a[n]=a[n]||[]).push([e,i])}},8544:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var r=n(2374);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(n,r))}},5526:(e,t,n)=>{n.d(t,{Rl:()=>a,ky:()=>s});var r=n(2374);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++n).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(n,++i).toString(16));return a.join("")}},2797:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>o,oD:()=>i});const r="NRBA",i=144e5,o=18e5},2053:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},8610:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},7269:(e,t,n)=>{n.d(t,{N:()=>u,T:()=>d});var r=n(7022),i=n(3752),o=n(9252),a=n(4329),s=n(2325);const c={stn:[s.D.sessionTrace],err:[s.D.jserrors,s.D.metrics],ins:[s.D.pageAction],spa:[s.D.spa],sr:[s.D.sessionReplay]};function u(e,t){var n=i.ee.get(t);e&&"object"==typeof e&&((0,r.D)(e,(function(e,t){if(!t)return(c[e]||[]).forEach((t=>{(0,o.p)("block-"+e,[],void 0,t,n)}));d[e]||((0,o.p)("feat-"+e,[],void 0,c[e],n),d[e]=!0)})),(0,a.L)(t,s.D.pageViewEvent))}const d={}},3916:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},2374:(e,t,n)=>{n.d(t,{FN:()=>a,_A:()=>o,il:()=>r,v6:()=>i});const r=Boolean("undefined"!=typeof window&&window.document),i=Boolean("undefined"!=typeof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator);let o=(()=>{if(r)return window;if(i){if("undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope)return globalThis;if(self instanceof WorkerGlobalScope)return self}throw new Error('New Relic browser agent shutting down due to error: Unable to locate global scope. This is possibly due to code redefining browser global variables like "self" and "window".')})();const a=""+o.location},7022:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},2438:(e,t,n)=>{n.d(t,{P:()=>o});var r=n(3752);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},2650:(e,t,n)=>{n.d(t,{K:()=>a,b:()=>o});var r=n(8544);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,r.bP)("load",e,t)}function a(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},6797:(e,t,n)=>{n.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>s});var r=n(2053),i=n(2374);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[n]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},6998:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(8544);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;return void(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"==document.visibilityState&&e());e(document.visibilityState)}),n,i)}},6034:(e,t,n)=>{n.d(t,{gF:()=>o,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>a});const r=n(2325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},2484:(e,t,n)=>{n.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>r});const r=n(2325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},6382:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(2325).D.pageViewTiming},1509:(e,t,n)=>{n.d(t,{W:()=>o});var r=n(880),i=n(3752);class o{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},3975:(e,t,n)=>{n.d(t,{j:()=>v});var r=n(2325),i=n(880),o=n(9252),a=n(3752),s=n(2053),c=n(4329),u=n(2650),d=n(2374),l=n(8610),f=n(6034),g=n(6797);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...r))})),o.length>1?o:o[0]}(t,...r)}}))}var h=n(7269);function v(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},v=arguments.length>2?arguments[2]:void 0,m=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:A={loaderType:v},exposed:x=!0}=t;const D=(0,g.gG)();y||(b=D.init,y=D.info,w=D.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),(0,i.sU)(e,A),y.jsAttributes??={},d.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y),p();const _=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,o){const a=(0,i.C5)(e);return null===n?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:n}}),A(v,r,!0,o||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>g[e]=A(v,e,!0,"api"))),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,a="function"==typeof t;return(0,o.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],n),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function x(){n.e(439).then(n.bind(n,5692)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},d.v6?x():(0,u.b)((()=>x()),!0),g}(e,m);return(0,g.Qy)(e,_,"api"),(0,g.Qy)(e,x,"exposed"),(0,g.EZ)("activatedFeatures",h.T),_}},2325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var o=r[e]={exports:{}};return n[e](o,o.exports,i),o.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",193:"session_trace-aggregate",242:"session-manager",317:"jserrors-aggregate",348:"page_view_timing-aggregate",412:"lazy-feature-loader",439:"async-api",538:"recorder",590:"session_replay-aggregate",675:"compressor",786:"page_view_event-aggregate",873:"spa-aggregate",898:"ajax-aggregate"}[e]||e)+"."+{78:"e03e2220",147:"75d6a08d",193:"715c3096",242:"9219a813",286:"d701d70f",317:"8c74e315",348:"ad791b05",412:"fe5af5d1",439:"bbe52263",538:"1b18459f",590:"36b41a12",646:"c6971123",675:"ae9f91a8",786:"e157f7ce",873:"e1bcad73",898:"716f46cf"}[e]+"-1.234.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(n,r,o,a)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.j=35,i.p="https://js-agent.newrelic.com/",(()=>{var e={35:0,266:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var o=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var o=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,o,[a,s,c]=n,u=0;if(a.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},n=window.webpackChunkNRBA=window.webpackChunkNRBA||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})();var o={};(()=>{i.r(o);var e=i(2325),t=i(880);const n=Object.values(e.D);function r(e){const r={};return n.forEach((n=>{r[n]=function(e,n){return!1!==(0,t.Mt)(n,"".concat(e,".enabled"))}(n,e)})),r}var a=i(3975);var s=i(9252),c=i(8768),u=i(4329),d=i(1509),l=i(2650),f=i(2374),g=i(8610);class p extends d.W{constructor(e,t,n){let r=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.hasAggregator=!1,this.auto=r,this.abortHandler,r&&(0,u.R)(e,n)}importAggregator(n){if(this.hasAggregator||!this.auto)return;let r,o;this.hasAggregator=!0,!0!==(0,t.Mt)(this.agentIdentifier,"privacy.cookies_enabled")||f.v6||(o=Promise.all([i.e(286),i.e(242)]).then(i.bind(i,3289)).catch((e=>{(0,g.Z)("failed to import the session manager",e)})));const a=async()=>{try{if(o&&!r){const{setupAgentSession:e}=await o;r=e(this.agentIdentifier)}if(!function(t,n){return t!==e.D.sessionReplay||(!!n?.isNew||!!n?.state.sessionReplayActive)}(this.featureName,r))return void(0,u.L)(this.agentIdentifier,this.featureName);const{lazyFeatureLoader:t}=await i.e(412).then(i.bind(i,3160)),{Aggregate:a}=await t(this.featureName,"aggregate");new a(this.agentIdentifier,this.aggregator,n)}catch(e){(0,g.Z)("Downloading ".concat(this.featureName," failed..."),e),this.abortHandler?.()}};f.v6?a():(0,l.b)((()=>a()),!0)}}var h=i(2484),v=i(2053);class m extends p{static featureName=h.t9;constructor(n,r){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(n,r,h.t9,i),("undefined"==typeof PerformanceNavigationTiming||c.T)&&"undefined"!=typeof PerformanceTiming){const r=(0,t.OP)(n);r[h.Dz]=Math.max(Date.now()-r.offset,0),(0,l.K)((()=>r[h.qw]=Math.max((0,v.z)()-r[h.Dz],0))),(0,l.b)((()=>{const t=(0,v.z)();r[h.OJ]=Math.max(t-r[h.Dz],0),(0,s.p)("timing",["load",t],void 0,e.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var b=i(9557),y=i(7022);class w extends b.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var o=this.getBucket(e,t,n,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,y.D)(e,(function(e,n){t[e]=A(n,t[e])})),t}(r,o.metrics),o}merge(e,t,n,r,i){var o=this.getBucket(e,t,r,i);if(o.metrics){var a=o.metrics;a.count+=n.count,(0,y.D)(n,(function(e,t){if("count"!==e){var r=a[e],i=n[e];i&&!i.c?a[e]=A(i.t,r):a[e]=function(e,t){if(!t)return e;t.c||(t=x(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=A(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=D(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function A(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=x(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function x(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function D(e){return"object"!=typeof e?[]:(0,y.D)(e,_)}function _(e,t){return t}var j=i(6797),E=i(5526),k=i(2438);var T=i(6998),N=i(8544),P=i(6382);class S extends p{static featureName=P.t;constructor(e,n){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,n,P.t,r),f.il&&((0,t.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,T.N)((()=>(0,s.p)("docHidden",[(0,v.z)()],void 0,P.t,this.ee)),!0),(0,N.bP)("pagehide",(()=>(0,s.p)("winPagehide",[(0,v.z)()],void 0,P.t,this.ee))),this.importAggregator())}}var I=i(6034);class O extends p{static featureName=I.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,n),this.importAggregator()}}new class{constructor(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);this.agentIdentifier=t,this.sharedAggregator=new w({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(m),Object.assign(this,(0,a.j)(this.agentIdentifier,e,e.loaderType||"agent")),this.start()}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){const t="features";try{const n=r(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((t,n)=>e.p[t.featureName]-e.p[n.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===e.D.pageViewEvent){const r=function(t){switch(t){case e.D.ajax:return[e.D.jserrors];case e.D.sessionTrace:return[e.D.ajax,e.D.pageViewEvent];case e.D.pageViewTiming:return[e.D.pageViewEvent];default:return[]}}(t.featureName);r.every((e=>n[e]))||(0,g.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,k.P)(r),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,j.Qy)(this.agentIdentifier,this.features,t)}catch(e){(0,g.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",e);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,j.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}}({features:[m,S,O],loaderType:"lite"})})(),window.NRBA=o})();</script>
+<link rel="preload" href="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/fonts/roboto/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/fonts/roboto/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/fonts/roboto/Roboto-Italic.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/fonts/roboto/Roboto-BlackItalic.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/fonts/merriweather/Latin-Merriweather-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/fonts/merriweather/Latin-Merriweather-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+<noscript><style>form.antibot * :not(.antibot-message) { display: none !important; }</style>
+</noscript><link rel="canonical" href="https://bjs.ojp.gov/learcat-methodology">
+<meta name="description" content="LEARCAT User Guide and Methodology About The LEARCAT The Law Enforcement Agency Reported Crime Analysis Tool (LEARCAT) dashboard enables you to examine crime information reported by participating law enforcement agencies to the FBI’s National Incident-Based Reporting System (NIBRS). As of January 1, 2021, the FBI transitioned to NIBRS as the nation’s official law enforcement crime reporting standard.">
+<meta property="og:site_name" content="Bureau of Justice Statistics">
+<meta property="og:url" content="https://bjs.ojp.gov/learcat-methodology">
+<meta property="og:title" content="LEARCAT Methodology">
+<meta property="og:description" content="LEARCAT User Guide and Methodology About The LEARCAT The Law Enforcement Agency Reported Crime Analysis Tool (LEARCAT) dashboard enables you to examine crime information reported by participating law enforcement agencies to the FBI’s National Incident-Based Reporting System (NIBRS). As of January 1, 2021, the FBI transitioned to NIBRS as the nation’s official law enforcement crime reporting standard.">
+<meta property="og:image" content="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/images/2021-02/OGimage_0.png">
+<meta name="google-site-verification" content="4PLVTsyCm3--uca8rMAYrsLAAEJtRBtpZWm-kh9pr0g">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="LEARCAT User Guide and Methodology About The LEARCAT The Law Enforcement Agency Reported Crime Analysis Tool (LEARCAT) dashboard enables you to examine crime information reported by participating law enforcement agencies to the FBI’s National Incident-Based Reporting System (NIBRS). As of January 1, 2021, the FBI transitioned to NIBRS as the nation’s official law enforcement crime reporting standard.">
+<meta name="twitter:title" content="LEARCAT Methodology | Bureau of Justice Statistics">
+<meta name="twitter:dnt" content="on">
+<meta name="twitter:url" content="https://bjs.ojp.gov/learcat-methodology">
+<meta name="twitter:image" content="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/images/2021-02/OGimage_0.png">
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/images/ojp/favicon.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://bjs.ojp.gov/learcat-methodology">
+<script src="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/google_tag/primary/google_tag.script.js?rw720u" defer=""></script>
+
+    <title>Data Upload | Bureau of Justice Statistics</title>
+    <style class="anchorjs"></style><link rel="stylesheet" media="all" href="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/css/css_eNTIlYM7SqfgWwz3C6swX6qfXZdEpdP1xxuctDE39L0.css">
+<link rel="stylesheet" media="all" href="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/css/css_JKqYPIbzc7Cz02qbpniyIXOOw54XbWNq8QClCnbRWek.css">
+<link rel="stylesheet" media="print" href="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/css/css_SejA4G5-yM-mncQrSKOnNHtHyw_iuaeG5iOQgdhkPkA.css">
+<link rel="stylesheet" media="all" href="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/css/css_atkN7G_9HxpNGK2Glhwzv5HRsQ0LOH9_TYIfeggN6JQ.css">
+
+    
+  <script src="https://www.google.com/cse/static/element/ffd60a64b75d4cdb/cse_element__en.js?usqp=CAI%3D" type="text/javascript"></script><link type="text/css" href="https://www.google.com/cse/static/element/ffd60a64b75d4cdb/default+en.css" rel="stylesheet"><link type="text/css" href="https://www.google.com/cse/static/style/look/v4/default.css" rel="stylesheet"><style type="text/css">.gsc-control-cse{font-family:roboto, arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:roboto, arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}.gsc-control-cse{border-color:#FFFFFF;background-color:#FFFFFF}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#D9D9D9}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#2F5BB7;background-color:#4D90FE;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhActive,.gsc-refinementHeader.gsc-refinementhActive{color:#1155CC;border-color:#1155CC;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive,.gsc-refinementHeader.gsc-refinementhInactive{color:#444444;border-color:#444444;background-color:#FFFFFF}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover{border-color:#FFFFFF;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#1155CC}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#1155CC}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#1155CC}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#1155CC}.gsc-cursor-page{color:#1155CC}a.gsc-trailing-more-results:link{color:#1155CC}.gs-webResult:not(.gs-no-results-result):not(.gs-error-result) .gs-snippet,.gs-fileFormatType{color:#333333}.gs-webResult div.gs-visibleUrl{color:#009933}.gs-webResult div.gs-visibleUrl-short{color:#009933}.gs-webResult div.gs-visibleUrl-short{display:none}.gs-webResult div.gs-visibleUrl-long{display:none}.gs-webResult div.gs-visibleUrl-breadcrumb{display:block}.gs-promotion div.gs-visibleUrl-short{display:none}.gs-promotion div.gs-visibleUrl-long{display:block}.gs-promotion div.gs-visibleUrl-breadcrumb{display:none}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#444444;background-color:#FFFFFF;color:#444444}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#1155CC;background-color:#FFFFFF;color:#1155CC}.gsc-webResult.gsc-result.gsc-promotion{border-color:#FFFFFF;background-color:#EEEEEE}.gsc-completion-title{color:#1155CC}.gsc-completion-snippet{color:#333333}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#1155CC}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#1155CC}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#1155CC}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#1155CC}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#333333}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#009933}.gcsc-find-more-on-google{color:#1155CC}.gcsc-find-more-on-google-magnifier{fill:#1155CC}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><script src="//gateway.foresee.com/sites/ojp-main/production/gateway.min.js" type="text/javascript" async="true" data-vendor="fs" data-role="gateway"></script><script src="//gateway.foresee.com/code/6.1.2-mp/mpathy-modern.js" async="true" type="text/javascript" charset="utf-8" crossorigin="anonymous"></script><link id="fs-css-1" rel="stylesheet" type="text/css" href="//gateway.foresee.com/code/19.14.5-fs/templates/feedback/default/main.css">
+  </head>
+
+<body class="page-with-hero path-node page-node-type-page" data-once="buBehavior">
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPK5P7R" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+      <section class="usa-banner" aria-label="Official government website">
+
+    <div class="usa-accordion">
+  <header class="usa-banner__header">
+    <div class="usa-banner__inner">
+      <div class="grid-col-auto">
+        <img class="usa-banner__header-flag" src="https://bjs.ojp.gov/themes/custom/ojp/assets/dist/img/us_flag_small.png" alt="U.S. flag">
+      </div>
+      <div class="grid-col-fill tablet:grid-col-auto">
+        <p class="usa-banner__header-text">An official website of the United States government, Department of Justice.</p>
+        <p class="usa-banner__header-action" aria-hidden="true">Here's how you know</p>
+      </div>
+      <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+        <span class="usa-banner__button-text">Here's how you know</span>
+      </button>
+    </div>
+  </header>
+  <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden="">
+    <div class="grid-row grid-gap-lg">
+      <div class="usa-banner__guidance tablet:grid-col-6">
+        <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/ojp/assets/dist/img/icon-dot-gov.svg" role="img" alt="" aria-hidden="true">
+        <div class="usa-media-block__body">
+          <p>
+            <strong>Official websites use .gov</strong>
+            <br>
+            A <strong>.gov</strong> website belongs to an official government organization in the United States.
+          </p>
+        </div>
+      </div>
+      <div class="usa-banner__guidance tablet:grid-col-6">
+        <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/ojp/assets/dist/img/icon-https.svg" role="img" alt="" aria-hidden="true">
+        <div class="usa-media-block__body">
+          <p>
+            <strong>Secure .gov websites use HTTPS</strong>
+            <br>
+            A <strong>lock</strong> (
+            <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title-default banner-lock-description-default" focusable="false"><title id="banner-lock-title-default">Lock</title><desc id="banner-lock-description-default">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"></path></svg></span>
+            ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+  </section>
+
+  <header class="usa-header usa-header--extended" id="header">
+
+    
+      <div class="usa-navbar">
+                <button class="usa-menu-btn usa-button">Menu</button>
+                  <div class="region region-header">
+    <div class="usa-logo" id="logo">
+      <div class="ojp-seal">
+      <a href="https://www.ojp.gov" accesskey="1" title="Office of Justice Programs" aria-label="Office of Justice Programs">
+                <img src="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/images/ojp/OJP-seal.svg" alt="Office of Justice Programs seal" height="98" width="98">
+              </a>
+    </div>
+        <div class="ojp-office-logo">
+      <a href="/" accesskey="2" title="Home" aria-label="Home">
+        <img src="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/images/ojp/bjs-logo.svg?v=1" alt="Home">
+      </a>
+    </div>
+  </div>
+
+  </div>
+
+      </div>
+
+      <div class="usa-overlay"></div>
+        <nav class="usa-nav" aria-label="site navigation">
+          <div class="usa-nav__inner">
+
+            <button class="usa-nav__close">
+              <img src="https://bjs.ojp.gov/themes/custom/ojp/assets/dist/img/close-white.svg" alt="close">
+            </button>
+
+            
+            
+                                              <div class="region region-primary-menu">
+    
+
+
+  
+  
+          <ul class="usa-nav__primary usa-accordion" aria-label="primary navigation">
+    
+          <li class="usa-nav__primary-item">
+
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-1">
+            <span>About BJS</span>
+          </button>
+        
+                    
+  
+          <ul id="extended-nav-section-1" class="usa-nav__submenu" hidden="">
+
+            <li class="usa-nav__submenu-item">
+        <a href="https://bjs.ojp.gov/about">
+          <span>About BJS</span>
+        </a>
+      </li>
       
-        <div class="upload-container">
-            <div class="upload-header">
-                <h2>Import the CSV file into Mysql Database using Spring Boot Application</h2>
-            </div>
-            <div class="upload-content">
-                <div class="single-upload">
-                    <h3>Upload the CSV File </h3>
+    
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/bjs-director" class="link">
+            <span class="">The BJS Director</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/about/activities-programs" class="link">
+            <span class="">Activities &amp; Programs</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/about/job-opportunities" class="link">
+            <span class="">Job Opportunities</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/about/principles-and-practices" class="link">
+            <span class="">Principles and Practices</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/reviews-bjs-programs" class="link">
+            <span class="">Reviews of BJS Programs</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/about-bjs-website" class="link">
+            <span class="">About the BJS Website</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/about/staff-directory" class="link">
+            <span class="">Staff Directory</span>
+          </a>
+        
+      </li>
+        </ul>
+  
+        
+      </li>
+          <li class="usa-nav__primary-item">
+
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-2">
+            <span>Topics</span>
+          </button>
+        
+                    
+  
+          <ul id="extended-nav-section-2" class="usa-nav__submenu" hidden="">
+
+            <li class="usa-nav__submenu-item">
+        <a href="https://bjs.ojp.gov/topics">
+          <span>Topics</span>
+        </a>
+      </li>
+      
+    
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/topics/corrections" class="link">
+            <span class="">Corrections</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/costs-crime" class="link">
+            <span class="">Costs of Crime</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/topics/courts" class="link">
+            <span class="">Courts</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/topics/crime" class="link">
+            <span class="">Crime</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/topics/federal-justice-system" class="link">
+            <span class="">Federal Justice System</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/topics/forensic-sciences" class="link">
+            <span class="">Forensic Sciences</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/topics/law-enforcement" class="link">
+            <span class="">Law Enforcement</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/topics/recidivism-and-reentry" class="link">
+            <span class="">Recidivism and Reentry</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/topics/tribal-crime-and-justice" class="link">
+            <span class="">Tribal Crime and Justice</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/topics/victims" class="link">
+            <span class="">Victims of Crime</span>
+          </a>
+        
+      </li>
+        </ul>
+  
+        
+      </li>
+          <li class="usa-nav__primary-item">
+
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-3">
+            <span>Publications</span>
+          </button>
+        
+                    
+  
+          <ul id="extended-nav-section-3" class="usa-nav__submenu" hidden="">
+
+            <li class="usa-nav__submenu-item">
+        <a href="https://bjs.ojp.gov/library">
+          <span>Publications</span>
+        </a>
+      </li>
+      
+    
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/library/publications/list?series_filter=Just%20the%20Stats" class="link">
+            <span class="">Just the Stats</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/library/publications/list" class="link">
+            <span class="">Search Publications</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/library/publications/forthcoming" class="link">
+            <span class="">Forthcoming Publications</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/library/publications/list/research" class="link">
+            <span class="">Research and Third-party Reports</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/library/publications/data-corrections" class="link">
+            <span class="">Data Corrections</span>
+          </a>
+        
+      </li>
+        </ul>
+  
+        
+      </li>
+          <li class="usa-nav__primary-item">
+
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-4">
+            <span>Data</span>
+          </button>
+        
+                    
+  
+          <ul id="extended-nav-section-4" class="usa-nav__submenu" hidden="">
+
+            <li class="usa-nav__submenu-item">
+        <a href="https://bjs.ojp.gov/data">
+          <span>Data</span>
+        </a>
+      </li>
+      
+    
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/data-collections/search" class="link">
+            <span class="">Search Data Collections</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/data/data-analysis-tools" class="link">
+            <span class="">Data Analysis Tools</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/data/national-archive-criminal-justice-data" class="link">
+            <span class="">National Archive of Criminal Justice Data</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/data/data-collection-process" class="link">
+            <span class="">Data Collection Process</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/standard-application-process" class="link">
+            <span class="">The Standard Application Process</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/data/topic" class="link">
+            <span class="">Data by Topic</span>
+          </a>
+        
+      </li>
+        </ul>
+  
+        
+      </li>
+          <li class="usa-nav__primary-item">
+
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-5">
+            <span>Funding &amp; Awards</span>
+          </button>
+        
+                    
+  
+          <ul id="extended-nav-section-5" class="usa-nav__submenu" hidden="">
+
+            <li class="usa-nav__submenu-item">
+        <a href="https://bjs.ojp.gov/funding">
+          <span>Funding &amp; Awards</span>
+        </a>
+      </li>
+      
+    
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/funding/current" class="link">
+            <span class="">Current Funding Opportunities</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/funding/expired" class="link">
+            <span class="">Expired  Funding</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/funding/awards/list" class="link">
+            <span class="">Awards: Listing of Funded Projects</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/funding/human-subjects-and-confidentiality-requirements" class="link">
+            <span class="">Human Subjects and Confidentiality Requirements</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/funding/guidance-applicants-and-awardees" class="link">
+            <span class="">Guidance for Applicants and Award Recipients</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/technology-and-publishing-requirements-bjs-contractors-and-grantees" class="link">
+            <span class="">Technology and Publishing Requirements</span>
+          </a>
+        
+      </li>
+        </ul>
+  
+        
+      </li>
+          <li class="usa-nav__primary-item">
+
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-6">
+            <span>Programs</span>
+          </button>
+        
+                    
+  
+          <ul id="extended-nav-section-6" class="usa-nav__submenu" hidden="">
+
+            <li class="usa-nav__submenu-item">
+        <a href="https://bjs.ojp.gov/programs">
+          <span>Programs</span>
+        </a>
+      </li>
+      
+    
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/dicra" class="link">
+            <span class="">Death in Custody Reporting Act</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/federal-justice-statistics-program" class="link">
+            <span class="">Federal Justice Statistics Program</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/lecs" class="link">
+            <span class="">Law Enforcement Core Statistics (LECS)</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/ncrp" class="link">
+            <span class="">National Corrections Reporting Program</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/ncvs" class="link">
+            <span class="">National Crime Victimization Survey</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/national-criminal-history-improvement-program" class="link">
+            <span class="">National Criminal History Improvement Program</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/national-incident-based-reporting-system-nibrs" class="link">
+            <span class="">National Incident-Based Reporting System (NIBRS)</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/national-prisoner-statistics" class="link">
+            <span class="">National Prisoner Statistics Program</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/NPRSP" class="link">
+            <span class="">National Prison Rape Statistics Program</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/nics-improvement-amendments-act" class="link">
+            <span class="">NICS Act Record Improvement Program</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/nscs" class="link">
+            <span class="">National Survey of Crime and Safety (NSCS)</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/state-justice-statistics-program" class="link">
+            <span class="">State Justice Statistics Program</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/programs/vssrp" class="link">
+            <span class="">Victim Services Statistical Research Program</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/recidivism-program" class="link">
+            <span class="">National Recidivism and Reentry Data Program</span>
+          </a>
+        
+      </li>
+        </ul>
+  
+        
+      </li>
+          <li class="usa-nav__primary-item">
+
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-7">
+            <span>News</span>
+          </button>
+        
+                    
+  
+          <ul id="extended-nav-section-7" class="usa-nav__submenu" hidden="">
+
+            <li class="usa-nav__submenu-item">
+        <a href="https://bjs.ojp.gov/news">
+          <span>News</span>
+        </a>
+      </li>
+      
+    
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/subscribe" class="link">
+            <span class="">JustStats</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/press-releases" class="link">
+            <span class="">Press Releases</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/announcements" class="link">
+            <span class="">Announcements</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/featured" class="link">
+            <span class="">Featured Content</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/library/publications/list?series_filter=Just%20the%20Stats" class="link">
+            <span class="">Just the Stats</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/events" class="link">
+            <span class="">Events</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/events/on-demand" class="link">
+            <span class="">On-Demand Events</span>
+          </a>
+        
+      </li>
+        </ul>
+  
+        
+      </li>
+          <li class="usa-nav__primary-item">
+
+                  <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="extended-nav-section-8">
+            <span>Resources</span>
+          </button>
+        
+                    
+  
+          <ul id="extended-nav-section-8" class="usa-nav__submenu" hidden="">
+
+            <li class="usa-nav__submenu-item">
+        <a href="https://bjs.ojp.gov/resources">
+          <span>Resources</span>
+        </a>
+      </li>
+      
+    
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/frequently-asked-questions" class="link">
+            <span class="">FAQs</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/glossary" class="link">
+            <span class="">Glossary</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/related-links" class="link">
+            <span class="">Related Links</span>
+          </a>
+        
+      </li>
+          <li class="usa-nav__submenu-item">
+
+        
+                  <a href="https://bjs.ojp.gov/library/multimedia/list" class="link">
+            <span class="">Multimedia</span>
+          </a>
+        
+      </li>
+        </ul>
+  
+        
+      </li>
+        </ul>
+  
+
+
+
+  </div>
+
+                            
+                                <div class="region region-secondary-menu">
+    <div class="usa-nav__secondary">
+
+  
+<div class="usa-search usa-search--small">
+  <div role="search">
+    
+<div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" role="presentation" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" role="presentation" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" aria-label="search" id="gsc-i-id1" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; background: url(&quot;https://www.google.com/cse/static/images/1x/en/branding.png&quot;) left center no-repeat rgb(255, 255, 255); outline: none;" placeholder="Search"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="Clear search box" role="button" style="display: none;"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form></div></div>
+
+  </div>
+</div>
+      <ul class="usa-nav__secondary-links">
+
+          <li class="usa-nav__secondary-item">
+        <a href="https://bjs.ojp.gov/contact-us">
+          Contact Us
+        </a>
+      </li>
+          <li class="usa-nav__secondary-item">
+        <a href="https://bjs.ojp.gov/subscribe">
+          Subscribe
+        </a>
+      </li>
+          <li class="usa-nav__secondary-item">
+        <a href="https://bjs.ojp.gov/saml_login">
+          Sign In
+        </a>
+      </li>
+                  <li class="usa-nav__secondary-item">
+        <div class="doj-sharing">
+  <button id="doj-sharing-toggle" class="doj-sharing__toggle" tabindex="0" title="Choose a social sharing platform" aria-haspopup="true" aria-controls="doj-sharing-links" aria-expanded="false">Share</button>
+<ul id="doj-sharing-links" class="doj-sharing__list" tabindex="0" aria-label="Choose a social sharing platform"><li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//bjs.ojp.gov/learcat-methodology" title="Share on Facebook" data-event-label="Share on Facebook" target="_blank">Facebook</a></li><li><a href="https://twitter.com/intent/tweet?url=https%3A//bjs.ojp.gov/learcat-methodology&amp;text=LEARCAT%20Methodology" title="Share on Twitter" data-event-label="Share on Twitter" target="_blank">Twitter</a></li><li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//bjs.ojp.gov/learcat-methodology&amp;title=LEARCAT%20Methodology" title="Share on LinkedIn" data-event-label="Share on LinkedIn" target="_blank">LinkedIn</a></li><li><a href="https://reddit.com/submit?url=https%3A//bjs.ojp.gov/learcat-methodology&amp;title=LEARCAT%20Methodology" title="Share on Reddit" data-event-label="Share on Reddit" target="_blank">Reddit</a></li><li><a href="https://pinterest.com/pin/create/button?url=https%3A//bjs.ojp.gov/learcat-methodology&amp;media=https%3A//bjs.ojp.gov/sites/g/files/xyckuh236/files/images/2021-02/OGimage_0.png&amp;description=LEARCAT%20Methodology" title="Share on Pinterest" data-event-label="Share on Pinterest" target="_blank">Pinterest</a></li><li><a href="mailto:?to=&amp;body=https%3A//bjs.ojp.gov/learcat-methodology&amp;subject=LEARCAT%20Methodology" title="Share on Email" data-event-label="Share on Email">Email</a></li></ul>
+</div>
+      </li>
+        </ul>
+  
+</div>
+
+
+  </div>
+
+              
+            
+          </div>
+        </nav>
+
+      
+  </header>
+  
+    <div class="grid-container">
+    <div class="grid-col-fill">
+        <div class="region region-breadcrumb">
+    <div id="block-chameleon-breadcrumbs" data-block-plugin-id="system_breadcrumb_block" class="block block-system block-system-breadcrumb-block">
+  
+    
+       <nav id="system-breadcrumb" aria-label="breadcrumb">
+        <ol class="add-list-reset uswds-breadcrumbs uswds-horizontal-list">
+                            <li>
+                                            <a href="/">Home</a>
+                                    </li>
+                    </ol>
+    </nav>
+
+  </div>
+
+  </div>
+
+    </div>
+  </div>
+  
+  <section class="clearfix" aria-label="hero">
+      <div class="region region-hero">
+    <div class="hero hero--background hero--primary">
+  <div class="hero-container">
+        <div class="hero__background-container  clearfix">
+            <div class="hero__text-container ">
+                
+        <h1 class="hero__title">Law Enforcement Agency Reported Crime Analysis Tool</h1>
+        
+
+                          <div class="hero__subtitle">Data Upload</div>
+        
+                                          </div>
+
+                </div>
+  </div>
+
+        <div class="hero__background-image" style="background: url()  no-repeat center center; background-size: cover;">
+      <div class="hero__background-image__overlay hero__background-image__overlay--solid"></div>
+    </div>
+  </div>
+
+
+  </div>
+
+  </section>
+  
+  
+<div class="usa-section uswds-middle-section " aria-label="primary content">
+  <div class="grid-container ">
+    <div class="grid-col-fill">
+        <div class="region region-highlighted">
+    <div data-drupal-messages-fallback="" class="hidden"></div>
+
+  </div>
+
+
+      
+    </div>
+  </div>
+  <main class="uswds-main-content-wrapper grid-container ">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="grid-row grid-gap-2">
+
+      <div class="region-content tablet:grid-col-12">
+          <div class="region region-content">
+    <div id="block-chameleon-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+      
+    
+<article about="/learcat-methodology">
+
+  
+    
+
+  
+  <div>
+
+    
+      
+  <div class="layout layout--twocol-section layout--twocol-section--75-25 layout--node-page">
+                    <div class="layout__region layout__region--first">
+        <div data-block-plugin-id="extra_field_block:node:page:field_content_archival_notice" class="block--field-content-archival-notice block block-layout-builder block-extra-field-blocknodepagefield-content-archival-notice">
+  
+    
+      
+  </div>
+<div data-block-plugin-id="field_block:node:page:field_date_published" class="block--field-date-published block block-layout-builder block-field-blocknodepagefield-date-published">
+</div>
+<div data-block-plugin-id="field_block:node:page:body" class="block--body block block-layout-builder block-field-blocknodepagebody">
+  
+<div class="use-float-friendly-lists clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><h2 id="learcat-user-guide-and-methodology"><span><span><span>Upload the CSV File</span></span></span><a class="anchorjs-link " aria-label="Copy link to section: LEARCAT User Guide and Methodology" data-anchorjs-icon="" title="Copy link to section: LEARCAT User Guide and Methodology" href="#learcat-user-guide-and-methodology" style="opacity: 1; font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
+
                     <form id="singleUploadForm" name="singleUploadForm">
                         <input id="singleFileUploadInput" type="file" name="file" class="file-input" required />
                         <button type="submit" class="primary submit-btn">Submit</button>
@@ -22,10 +937,354 @@
                         <div id="singleFileUploadError"></div>
                         <div id="singleFileUploadSuccess"></div>
                     </div>
+		
+
+
+
+<div aria-label="accordion-group" class="usa-accordion">
+</div>
+
+<p>&nbsp;</p>
+</div></div>
+      
+  </div>
+  
+<div data-block-plugin-id="modification_notes" class="block block-ojp-core block-modification-notes modification-notes">
+  <div class="modification-notes__divider"></div>
+</div>
+
+      </div>
+    
+          <div class="layout__region layout__region--second">
+        
+      </div>
+      
+      </div>
+
+
+  </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+      </div>
+
+      
+
+      
+    </div>
+  </main>
+</div>
+
+<footer class="usa-footer usa-footer--big">
+  <div class="grid-container usa-footer-return-to-top">
+    <a id="return-to-top" class="show" href="#">Top</a>
+  </div>
+
+      <div class="usa-footer__primary-section">
+      <div class="grid-container footer__wrapper">
+        <div class="usa-footer-primary__top padding-bottom-5">
+                      <h3 class="usa-footer__agency-heading tablet:display-inline-block">Bureau of Justice Statistics</h3>
+                  </div>
+
+        
+        
+                        <nav class="usa-footer-nav mobile-lg:grid-col-12" aria-label="footer navigation">
+
+                        <div class="region region-footer-menu">
+    
+
+    
+                <div class="grid-row grid-gap">
+        
+                  
+    
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+        <section aria-labelledby="section-about-bjs" class="usa-footer__primary-content usa-footer__primary-content--collapsible display-block">
+          <h4 class="usa-footer__primary-link">About BJS</h4>
+                    <ul class="add-list-reset usa-list--unstyled">
+                
+        
+                  
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/about">About BJS</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/about/activities-programs">Statistical Programs</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/about-bjs-website">About BJS Website</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/contact-us">Contact Us</a>
+      </li>
+      
+    
+        
+  
+          </ul>
+                  </section>
+      </div>
+      
+    
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+        <section aria-labelledby="section-data-integrity" class="usa-footer__primary-content usa-footer__primary-content--collapsible display-block">
+          <h4 class="usa-footer__primary-link">Data Integrity</h4>
+                    <ul class="add-list-reset usa-list--unstyled">
+                
+        
+                  
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/media/document/bjs_data_protection_guidelines.pdf">BJS Data Protection Guidelines</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/bjs-data-quality-guidelines">BJS Data Quality Guidelines</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/about/principles-and-practices">BJS Statistical Principles and Practices</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/media/document/scientificintegrity.pdf">Scientific Integrity Statement</a>
+      </li>
+      
+    
+        
+  
+          </ul>
+                  </section>
+      </div>
+      
+    
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+        <section aria-labelledby="section-partners" class="usa-footer__primary-content usa-footer__primary-content--collapsible display-block">
+          <h4 class="usa-footer__primary-link">Partners</h4>
+                    <ul class="add-list-reset usa-list--unstyled">
+                
+        
+                  
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://www.icpsr.umich.edu/web/pages/NACJD/index.html" class="ext" data-extlink="">National Archive of Criminal Justice Data<svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://www.ojp.gov/ncjrs/new-ojp-resources">National Criminal Justice Reference Service</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://www.fbi.gov/">Federal Bureau of Investigation</a>
+      </li>
+      
+    
+        
+  
+          </ul>
+                  </section>
+      </div>
+      
+    
+                  <div class="mobile-lg:grid-col-6 desktop:grid-col-3">
+        <section aria-labelledby="section-resources" class="usa-footer__primary-content usa-footer__primary-content--collapsible display-block">
+          <h4 class="usa-footer__primary-link">Resources</h4>
+                    <ul class="add-list-reset usa-list--unstyled">
+                
+        
+                  
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/frequently-asked-questions">FAQs</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/glossary">Glossary</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/related-links">Related Links</a>
+      </li>
+      
+    
+                  <li class="usa-footer__secondary-link">
+        <a href="https://bjs.ojp.gov/subscribe">Subscribe</a>
+      </li>
+      
+    
+        
+  
+          </ul>
+                  </section>
+      </div>
+      
+    
                 </div>
-               
+        
+  
+
+
+
+  </div>
+
+          
+        </nav>
+
+        <div class="footer__social">
+                      <a class="usa-link-facebook margin-right-2 ext" href="https://www.facebook.com/BJSgov/" data-extlink="">
+              <span class="usa-sr-only">Facebook</span><span class="f">&nbsp;</span>
+            <svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>
+          
+                      <a class="usa-link-twitter margin-right-2 ext" href="https://twitter.com/BJSgov" data-extlink="">
+              <span class="usa-sr-only">Twitter</span><span class="t">&nbsp;</span>
+            <svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>
+          
+                      <a class="usa-link-youtube ext" href="https://www.youtube.com/channel/UC4sChTMpog0vHNL1HvkTKzQ" data-extlink="">
+              <span class="usa-sr-only">YouTube</span>
+              <span class="yt"> </span>
+            <svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>
+          
+                  </div>
+
+      </div>
+    </div>
+  
+
+      <div class="usa-footer__secondary-section">
+
+              <div class="grid-container">
+          <div class="grid-row usa-footer__logos-container ">
+                                              <div class="usa-footer-logo usa-width-one-half  desktop:grid-col-6 desktop:border-right border-base-dark">
+
+                            <a href="https://www.ojp.gov">
+                                                <img class="" src="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/images/ojp/ojp-full.svg" alt="U.S. Department of Justice, Office of Justice Programs Logo">
+                                            </a>
+                          </div>
+          
+                                            <div class="desktop:grid-col-6">
+              <div class="usa-footer__partner-logos 1">
+                <div class="grid-row">
+                  <div class="grid-col-4 flex-align-center usa-footer__partner-logo margin-bottom-3">
+                    <a href="https://bja.ojp.gov" aria-label="Bureau of Justice Administration">
+                      <img src="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/images/ojp/bja.svg" alt="Bureau of Justice Administration Logo">
+                    </a>
+                  </div>
+                  <div class="grid-col-4 flex-align-center usa-footer__partner-logo margin-bottom-3">
+                    <a href="https://bjs.ojp.gov" aria-label="Bureau of Justice Statistics">
+                      <img src="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/images/ojp/bjs.svg" alt="Bureau of Justice Statistics Logo">
+                    </a>
+                  </div>
+                  <div class="grid-col-4 flex-align-center usa-footer__partner-logo margin-bottom-3">
+                    <a href=" https://nij.ojp.gov" aria-label="National Institute of Justice">
+                      <img src="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/images/ojp/nij.svg" alt="National Institute of Justice Logo">
+                    </a>
+                  </div>
+                  <div class="grid-col-4 flex-align-center usa-footer__partner-logo">
+                    <a href="https://ojjdp.ojp.gov" aria-label="Office of Juvenile Justice and Delinquency Prevention">
+                      <img src="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/images/ojp/ojjdp.svg" alt="Office of Juvenile Justice and Delinquency Prevention Logo">
+                    </a>
+                  </div>
+                  <div class="grid-col-4 flex-align-center usa-footer__partner-logo">
+                    <a href="https://ovc.ojp.gov" aria-label="Office for Victims of Crime">
+                      <img src="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/images/ojp/ovc.svg" alt="Office for Victims of Crime Logo">
+                    </a>
+                  </div>
+                  <div class="grid-col-4 flex-align-center usa-footer__partner-logo">
+                    <a href="https://smart.ojp.gov" aria-label="Office of Sex Offender Sentencing, Monitoring, Apprehending, Registering, and Tracking">
+                      <img src="https://bjs.ojp.gov/themes/custom/ojp/ojp_patternlab/source/images/ojp/smart.svg" alt="Office of Sex Offender Sentencing, Monitoring, Apprehending, Registering, and Tracking Logo">
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+
+                    </div>
+
+                      <div class="usa-footer-contact-links usa-width-one-half">
+
+              <address>
+
+                                  <p class="usa-footer-contact-heading">810 7th St. NW, Washington, D.C. 20531</p>
+                
+                
+                
+              </address>
+            </div>
+          
         </div>
-        <script src="/js/main.js" ></script>
-    </body>
+      
+              <div class="wide-nav">
+          <nav aria-labelledby="block-bja-secondaryfooterlinkmenu-menu" id="block-bja-secondaryfooterlinkmenu" class="navigation menu--secondary-footer-link-menu">
+            <h2 class="visually-hidden" id="block-bja-secondaryfooterlinkmenu-menu">Secondary Footer link menu</h2>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="https://www.justice.gov/accessibility/accessibility-information">Accessibility</a>
+              </li>
+              <li class="menu-item">
+                <a href="https://www.justice.gov/open/plain-writing-act">Plain Language</a>
+              </li>
+              <li class="menu-item">
+                <a href="https://www.justice.gov/doj/privacy-policy">Privacy Policy</a>
+              </li>
+              <li class="menu-item">
+                <a href="https://www.justice.gov/legalpolicies">Legal Policies and Disclaimer</a>
+              </li>
+              <li class="menu-item">
+                <a href="https://www.justice.gov/jmd/eeo-program-status-report">No FEAR Act</a>
+              </li>
+              <li class="menu-item">
+                <a href="https://www.ojp.gov/program/freedom-information-act/foia-overview">Freedom of Information Act</a>
+              </li>
+              <li class="menu-item">
+                <a href="https://www.usa.gov/">USA.gov</a>
+              </li>
+              <li class="menu-item">
+                <a href="https://www.justice.gov/">Justice.gov</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+                </div>
+  
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/67236","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"anchorjs":{"selector":".block--body.block-layout-builder h2:not(.usa-accordion__heading), .block--body.block-layout-builder h3, .block--body.block-layout-builder h4, .block--body.block-layout-builder h5, .block-inline-blocktext.block-layout-builder h2:not(.usa-accordion__heading), .block-inline-blocktext.block-layout-builder h3, .block-inline-blocktext.block-layout-builder h4, .block-inline-blocktext.block-layout-builder h5, .block-ojp-taxonomy h3, .block-ojp-core h3, .block-views-blockvideos-multimedia-block h2, .page-node-type-microsite-subpage .block-page-title-block h1, .block--field-faq-sections h3"},"bu":{"_core":{"default_config_hash":"hHRgRa8uaUJPBEvzD2uaerY4Z9xdbV4glRDRNp8euEE"},"notify_ie":12,"notify_firefox":56,"notify_opera":49,"notify_safari":10,"notify_chrome":62,"insecure":false,"unsupported":false,"mobile":false,"visibility_type":"hide","visibility_pages":"admin\/*","source":"\/\/browser-update.org\/update.min.js","show_source":"","position":"top","text_override":"{brow_name} is no longer supported. Some features of this site may not display correctly.","reminder":null,"reminder_closed":null,"new_window":false,"url":"","no_close":false,"test_mode":false},"ojp_search":{"search_no_query_text":"Your search yielded no results."},"ajax":[],"user":{"uid":0,"permissionsHash":"b0308d2a10e094d33dbe03eac54cbed08b8fd0fab0fd558edfd16ef058eb7057"}}</script>
+<script src="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/js/js_s1PFbowtLQFnHB-ShRUH-hT6s5FwqAPWBYwOPz0jAUY.js"></script>
+<script src="https://bjs.ojp.gov/libraries/anchor-js/anchor.min.js?v=4.3.0" defer=""></script>
+<script src="https://bjs.ojp.gov/libraries/clipboard/dist/clipboard.min.js?v=2.0.6" defer=""></script>
+<script src="https://bjs.ojp.gov/modules/custom/anchorjs/js/anchorjs.custom.js?v=0.1.0" defer=""></script>
+<script src="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/js/js_srLdt7axXxOoSjRP7WfIYq-RXWwdvO-VvRIWmn9WfNg.js"></script>
+<script src="https://bjs.ojp.gov/extlink/settings.js"></script>
+<script src="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/js/js_c0hecns0CAftnzmCOwBYLxRa48pqi1xWMZwQH4JQ1gU.js"></script>
+<script src="https://bjs.ojp.gov/libraries/datatables.net/js/jquery.dataTables.js?v=1.x" defer=""></script>
+<script src="https://bjs.ojp.gov/libraries/datatables.net-responsive/js/dataTables.responsive.min.js?v=1.x" defer=""></script>
+<script src="https://bjs.ojp.gov/modules/custom/ojp_datatables/js/ojp_datatables.js?v=1.x" defer=""></script>
+<script src="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/js/js_rPSnPDzJqwkHOZCv-0CKaNkw7iXSSzJEtNU_a8A40Tw.js"></script>
+<script src="https://cse.google.com/cse.js?cx=015849196504226064512:8qeg8tt4g1g"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-c4b708570077b982b16","applicationID":"440769306,440551491","transactionName":"YFEEbRdUCEpYBxUPXFkbJ1oRXAlXFhQAAVZoVwdaDVA=","queueTime":24,"applicationTime":39,"atts":"TBYHG19OG0Q=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<script type="text/javascript" src="//browser-update.org/update.min.js"></script><table cellspacing="0" cellpadding="0" role="presentation" class="gstl_50 gssb_c" style="width: 2px; display: none; top: 3px; position: absolute; left: -1px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><script type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=OJP"></script><script type="text/javascript" id="">(function(a){var b=document,f=b.createElement("script");b=b.head||b.getElementsByTagName("head")[0];var c="fsReady",g={src:"//gateway.foresee.com/sites/ojp-main/production/gateway.min.js",type:"text/javascript",async:"true","data-vendor":"fs","data-role":"gateway"},d;for(d in g)f.setAttribute(d,g[d]);b.appendChild(f);a[c]||(a[c]=function(){var e="__"+c+"_stk__";a[e]=a[e]||[];a[e].push(arguments)})})(window);</script><a aria-label="Feedback, opens dialog" class="_acs _acsbadge--default _acsbadge--small _acsmiddleright _acsVertical_right _acsAnimate" role="button" style="display: block; overflow: hidden; background-color: rgb(26, 68, 128); visibility: visible;" tabindex="0">   <svg aria-hidden="true" class="_acsBadgeImg _acsBadgeImg__aspark _acsBadgeImg__aspark--small" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><title>Play Icon</title><g id="Layer_2"><g id="Layer_1-2"><path d="M0,0v14l12-7L0,0z" style="fill:#fff;"></path></g></g></svg>  <span class="_acsBadgeLabel" style="color:#fff">Rate This Page</span> </a>
+</body>
 </html>
