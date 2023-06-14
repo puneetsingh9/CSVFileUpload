@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Table(name = "bjs_data")
 public class CsvEntity {
 
-	
+	@Id
 	@Column(name = "incident_id")
 	private int incident_id;
 
