@@ -19,7 +19,7 @@ import org.apache.commons.csv.QuoteMode;
 import org.springframework.web.multipart.MultipartFile;
 
 
-public class CSVHelper {
+public class CsvHelper {
 	public static String TYPE = "text/csv";
 	static String[] HEADERs = { "Incident_id","Data_year", "Offense_id", "Victim_id","Offender_id","Incident_date","Incident_hour", "Ori", "Agency",		  
 			"County", "State", "Agency_type", "Offense", "Offense_category", "Cleared_except", "Victim_sex", "Victim_age", "Victim_race", "Victim_ethnicity",

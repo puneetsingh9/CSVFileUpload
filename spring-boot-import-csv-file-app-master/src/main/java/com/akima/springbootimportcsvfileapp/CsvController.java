@@ -22,16 +22,16 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 @CrossOrigin("http://localhost:8080")
 @Controller
 @RequestMapping("/api/csv")
-public class CSVController {
+public class CsvController {
 
   @Autowired
-  CSVService fileService;
+  CsvService fileService;
 
   @PostMapping("/upload")
   public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
     String message = "";
 
-    if (CSVHelper.hasCSVFormat(file)) {
+    if (CsvHelper.hasCSVFormat(file)) {
       try {
         fileService.save(file);
 
