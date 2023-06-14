@@ -14,7 +14,7 @@ SET search_path TO pg_catalog,public,nibrs;
 CREATE SEQUENCE nibrs.upload_request_info_pk_seq 
 	INCREMENT BY 1
 	MINVALUE 0
-	MAXVALUE 2147483647
+	MAXVALUE 9999999999999999999999999999
 	START WITH 1
 	CACHE 1
 	NO CYCLE
@@ -26,7 +26,7 @@ CREATE SEQUENCE nibrs.upload_request_info_pk_seq
 CREATE SEQUENCE nibrs.visual_request_pk_seq
 	INCREMENT BY 1
 	MINVALUE 0
-	MAXVALUE 2147483647
+	MAXVALUE 9999999999999999999999999999
 	START WITH 1
 	CACHE 1
 	NO CYCLE
@@ -39,7 +39,7 @@ CREATE SEQUENCE nibrs.visual_request_pk_seq
 CREATE SEQUENCE nibrs.submission_status_pk_seq
 	INCREMENT BY 1
 	MINVALUE 0
-	MAXVALUE 2147483647
+	MAXVALUE 9999999999999999999999999999
 	START WITH 1
 	CACHE 1
 	NO CYCLE
@@ -59,7 +59,6 @@ CREATE TABLE nibrs.UploadRequestInfo(
     timestamp timestamp default current_timestamp
 
 	CONSTRAINT pk_upload_request_info_id PRIMARY KEY (RequestID),
-	CONSTRAINT unique_email UNIQUE (Email)
 
 );
 -- ddl-end --
