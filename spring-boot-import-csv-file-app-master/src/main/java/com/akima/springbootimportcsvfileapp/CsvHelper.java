@@ -49,9 +49,9 @@ public class CsvHelper {
 			for (CSVRecord csvRecord : csvRecords) {
 				CsvEntity developerTutorial = new CsvEntity(
 						//Long.parseLong(csvRecord.get("Incident_id")),
-						Integer.parseInt(csvRecord.get("Incident_id")),
+						//Integer.parseInt(csvRecord.get("Incident_id")),
 
-
+						csvRecord.get("Incident_id"),
 						csvRecord.get("Data_year"),
 
 						csvRecord.get("Offense_id"),

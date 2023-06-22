@@ -1,6 +1,7 @@
 package com.akima.springbootimportcsvfileapp;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.InputStreamResource;
@@ -68,13 +69,15 @@ public class CsvController {
     }
   }
 
-  @GetMapping("/download/{fileName:.+}")
-  public ResponseEntity<Resource> downloadFile(@PathVariable String fileName) {
-    InputStreamResource file = new InputStreamResource(fileService.load());
-
-    return ResponseEntity.ok()
-        .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=" + fileName)
-        .contentType(MediaType.parseMediaType("application/csv"))
-        .body(file);
+  @GetMapping("/download/{id}")
+  public ResponseEntity<CsvEntity> downloadFile(@PathVariable long id) {
+	 // return fileService.getById(id);
+	 
+	  Optional<CsvEntity> csv = fileService.getById(id);
+     
+          return new ResponseEntity<>(csv.get(), HttpStatus.OK);
+      
+ 
+	  
   }
 }

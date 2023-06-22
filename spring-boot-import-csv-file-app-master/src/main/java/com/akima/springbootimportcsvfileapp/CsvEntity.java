@@ -2,6 +2,8 @@ package com.akima.springbootimportcsvfileapp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -9,10 +11,12 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "bjs_data")
 public class CsvEntity {
-
-	@Id
+@Id
+@GeneratedValue(strategy = GenerationType.AUTO)
+	private long id;
+	
 	@Column(name = "incident_id")
-	private int incident_id;
+	private String incident_id;
 
 	@Column(name = "data_year")
 	private String data_year;
@@ -158,7 +162,7 @@ public class CsvEntity {
 
 
 
-	public CsvEntity(int incident_id, String data_year, String offense_id, String victim_id, String offender_id,
+	public CsvEntity(String incident_id, String data_year, String offense_id, String victim_id, String offender_id,
 			String incident_date, String incident_hour, String ori, String agency, String county, String state,
 			String agency_type, String offense, String offense_category, String cleared_except, String victim_sex,
 			String victim_age, String victim_race, String victim_ethnicity, String victim_type, String offender_sex,
@@ -222,13 +226,49 @@ public class CsvEntity {
 
 
 
-	public int getIncident_id() {
+
+
+
+
+
+
+
+
+
+
+	public String getIncident_id() {
 		return incident_id;
 	}
 
 
 
-	public void setIncident_id(int incident_id) {
+	public long getId() {
+		return id;
+	}
+
+
+
+
+
+
+
+
+
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+
+
+
+
+
+
+
+
+
+	public void setIncident_id(String incident_id) {
 		this.incident_id = incident_id;
 	}
 

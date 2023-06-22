@@ -1,6 +1,6 @@
 
 	CREATE TABLE bjs_data (
-	
+	    id int NOT NULL AUTO_INCREMENT,
 	  incident_id VARCHAR(255),
 	  data_year VARCHAR(255),
 	  offense_id VARCHAR(255),
@@ -44,8 +44,7 @@
 	  Location_Type VARCHAR(255),
 	  Method_of_Entry VARCHAR(255),
 	  Forced_NonForced VARCHAR(255),
-	  Point_of_Entry VARCHAR(255)
-	
+	  Point_of_Entry VARCHAR(255),
+PRIMARY KEY (id)
 	  
 	);
-
