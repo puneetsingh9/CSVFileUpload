@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Upload Error | Bureau of Justice Statistics</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/all.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style5.css}" />
+    <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<section class="login-main-wrapper">
+      <div class="main-container">
+          <div class="login-process">
+              <div class="login-main-container">
+                  <div class="thankyou-wrapper">
+                      <h1><img src="http://montco.happeningmag.com/wp-content/uploads/2014/11/thankyou.png" alt="thanks" /></h1>
+                        <p>Your file, th:text= ${fileName} is correctly formatted and will used to generate a data visualization.   Your request ID is: th:text= ${requestId}.
+                        An email will be sent to th:text= ${email} with a link to pick up the file when it is complete.  You must pick up your files within seven days.
+                        After pick up, your visualization will not be retained on this system and they will be deleted. 
+                        You may close this screen or upload another file here. 
+                        
+                        <a href="Screen2.html">Back to File Upload</a>
+                        <div class="clr"></div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </section>
+</body>
+</html>

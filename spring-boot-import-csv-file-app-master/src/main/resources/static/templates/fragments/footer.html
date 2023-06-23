@@ -1,0 +1,880 @@
+<footer class="usa-footer usa-footer--big">
+    <div class="usa-footer__primary-section">
+      <div class="footer__wrapper">
+        <div class="usa-footer-primary__top">
+          <h3 class="usa-footer__agency-heading">Bureau of Justice Statistics</h3>
+        </div>
+        <nav class="usa-footer-nav" aria-label="footer navigation">
+          <div class="region region-footer-menu">
+            <div class="region-footer-menu_row">
+              <div class="region-footer-menu_col">
+                <section aria-labelledby="section-about-bjs" class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                  <h4
+                    id="section-about-bjs" class="usa-footer__primary-link"
+                    :class="this.tab === 0 ? 'h4-open' : 'h4-close'"
+                    @click="() => this.handleTabClick(0)"
+                  >About BJS</h4>
+                  <ul class="add-list-reset usa-list--unstyled" :class="this.tab === 0 ? 'mobile-open' : 'mobile-hide'">
+                    <li class="usa-footer__secondary-link">
+                      <a href="https://bjs.ojp.gov/about">About BJS</a>
+                    </li>
+                    <li class="usa-footer__secondary-link">
+                      <a href="https://bjs.ojp.gov/about/activities-programs">Statistical Programs</a>
+                    </li>
+                    <li class="usa-footer__secondary-link">
+                      <a href="https://bjs.ojp.gov/about-bjs-website">About BJS Website</a>
+                    </li>
+                    <li class="usa-footer__secondary-link">
+                      <a href="https://bjs.ojp.gov/contact-us">Contact Us</a>
+                    </li>
+                </ul>
+              </section>
+            </div>
+            <div class="region-footer-menu_col">
+              <section aria-labelledby="section-data-integrity" class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                <h4
+                  id="section-data-integrity" class="usa-footer__primary-link"
+                  :class="this.tab === 1 ? 'h4-open' : 'h4-close'"
+                  @click="() => this.handleTabClick(1)"
+                >Data Integrity</h4>
+                <ul class="add-list-reset usa-list--unstyled" :class="this.tab === 1 ? 'mobile-open' : 'mobile-hide'">
+                  <li class="usa-footer__secondary-link">
+                    <a href="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/media/document/bjs_data_protection_guidelines.pdf">BJS Data Protection Guidelines</a>
+                  </li>
+                  <li class="usa-footer__secondary-link">
+                    <a href="https://bjs.ojp.gov/bjs-data-quality-guidelines">BJS Data Quality Guidelines</a>
+                  </li>
+                  <li class="usa-footer__secondary-link">
+                    <a href="https://bjs.ojp.gov/about/principles-and-practices">BJS Statistical Principles and Practices</a>
+                  </li>
+                  <li class="usa-footer__secondary-link">
+                    <a href="https://bjs.ojp.gov/sites/g/files/xyckuh236/files/media/document/scientificintegrity.pdf">Scientific Integrity Statement</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="region-footer-menu_col">
+              <section aria-labelledby="section-partners" class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                <h4 id="section-partners" class="usa-footer__primary-link"
+                :class="this.tab === 2 ? 'h4-open' : 'h4-close'"
+                @click="() => this.handleTabClick(2)"
+                >Partners</h4>
+                <ul class="add-list-reset usa-list--unstyled" :class="this.tab === 2 ? 'mobile-open' : 'mobile-hide'">
+                  <li class="usa-footer__secondary-link">
+                    <a href="https://www.icpsr.umich.edu/web/pages/NACJD/index.html" class="ext" data-extlink="">National Archive of Criminal Justice Data<svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw src="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg></a>
+                  </li>
+                  <li class="usa-footer__secondary-link">
+                    <a href="https://www.ojp.gov/ncjrs/new-ojp-resources">National Criminal Justice Reference Service</a>
+                  </li>
+                  <li class="usa-footer__secondary-link">
+                    <a href="https://www.fbi.gov/">Federal Bureau of Investigation</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="region-footer-menu_col">
+              <section aria-labelledby="section-resources" class="usa-footer__primary-content usa-footer__primary-content--collapsible">
+                <h4 id="section-resources" class="usa-footer__primary-link"
+                  :class="this.tab === 3 ? 'h4-open' : 'h4-close'"
+                  @click="() => this.handleTabClick(3)"
+                >Resources</h4>
+                <ul class="add-list-reset usa-list--unstyled" :class="this.tab === 3 ? 'mobile-open' : 'mobile-hide'">
+                  <li class="usa-footer__secondary-link">
+                    <a href="https://bjs.ojp.gov/frequently-asked-questions">FAQs</a>
+                  </li>
+                    <li class="usa-footer__secondary-link">
+                    <a href="https://bjs.ojp.gov/glossary">Glossary</a>
+                  </li>
+                  <li class="usa-footer__secondary-link">
+                    <a href="https://bjs.ojp.gov/related-links">Related Links</a>
+                  </li>
+                  <li class="usa-footer__secondary-link">
+                    <a href="https://bjs.ojp.gov/subscribe">Subscribe</a>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="footer__social">
+        <a class="usa-link-facebook ext" href="https://www.facebook.com/BJSgov/" data-extlink="">
+          <img src="@/assets/fb.svg" alt="Facebook" />
+          <span class="usa-sr-only">Facebook</span><span class="f">&nbsp;</span>
+          <svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw src="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg>
+        </a>
+        <a class="usa-link-twitter ext" href="https://twitter.com/BJSgov" data-extlink="">
+          <img src="@/assets/twitter.svg" alt="Twitter" />
+          <span class="usa-sr-only">Twitter</span><span class="t">&nbsp;</span>
+          <svg focusable="false" class="ext" role="img" aria-label="(link is external)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40"><metadata><sfw src="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link is external)</title><path d="M48 26c-1.1 0-2 0.9-2 2v26H10V18h26c1.1 0 2-0.9 2-2s-0.9-2-2-2H8c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h40c1.1 0 2-0.9 2-2V28C50 26.9 49.1 26 48 26z"></path><path d="M56 6H44c-1.1 0-2 0.9-2 2s0.9 2 2 2h7.2L30.6 30.6c-0.8 0.8-0.8 2 0 2.8C31 33.8 31.5 34 32 34s1-0.2 1.4-0.6L54 12.8V20c0 1.1 0.9 2 2 2s2-0.9 2-2V8C58 6.9 57.1 6 56 6z"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="usa-footer__secondary-section">
+    <div class="secondary-container">
+      <div class="usa-footer__logos-container ">
+        <div class="usa-footer-logo usa-width-one-half">
+          <a href="https://www.ojp.gov">
+              <img class="" src="@/assets/ojp-full.svg" alt="U.S. Department of Justice, Office of Justice Programs Logo">
+          </a>
+        </div>
+        <div class="secondary_logos-1">
+          <div class="usa-footer__partner-logos 1">
+            <div class="logos-grid">
+              <div class="usa-footer__partner-logo">
+                <a href="https://bja.ojp.gov" aria-label="Bureau of Justice Administration">
+                  <img src="@/assets/bja.svg" alt="Bureau of Justice Administration Logo">
+                </a>
+              </div>
+              <div class="usa-footer__partner-logo">
+                <a href="https://bjs.ojp.gov" aria-label="Bureau of Justice Statistics">
+                  <img src="@/assets/bjs.svg" alt="Bureau of Justice Statistics Logo">
+                </a>
+              </div>
+              <div class="usa-footer__partner-logo">
+                <a href=" https://nij.ojp.gov" aria-label="National Institute of Justice">
+                  <img src="@/assets/nij.svg" alt="National Institute of Justice Logo">
+                </a>
+              </div>
+              <div class="usa-footer__partner-logo">
+                <a href="https://ojjdp.ojp.gov" aria-label="Office of Juvenile Justice and Delinquency Prevention">
+                  <img src="@/assets/ojjdp.svg" alt="Office of Juvenile Justice and Delinquency Prevention Logo">
+                </a>
+              </div>
+              <div class="usa-footer__partner-logo">
+                <a href="https://ovc.ojp.gov" aria-label="Office for Victims of Crime">
+                  <img src="@/assets/ovc.svg" alt="Office for Victims of Crime Logo">
+                </a>
+              </div>
+              <div class="usa-footer__partner-logo">
+                <a href="https://smart.ojp.gov" aria-label="Office of Sex Offender Sentencing, Monitoring, Apprehending, Registering, and Tracking">
+                  <img src="@/assets/smart.svg" alt="Office of Sex Offender Sentencing, Monitoring, Apprehending, Registering, and Tracking Logo">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-half">
+        <address>
+          <p class="usa-footer-contact-heading">810 7th Street NW, Washington, D.C. 20531</p>
+        </address>
+      </div>
+    </div>
+    <div class="wide-nav">
+      <nav aria-labelledby="block-bja-secondaryfooterlinkmenu-menu" id="block-bja-secondaryfooterlinkmenu" class="navigation menu--secondary-footer-link-menu">
+        <h2 class="visually-hidden" id="block-bja-secondaryfooterlinkmenu-menu">Secondary Footer link menu</h2>
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="https://www.justice.gov/accessibility/accessibility-information">Accessibility</a>
+          </li>
+          <li class="menu-item">
+            <a href="https://www.justice.gov/open/plain-writing-act">Plain Language</a>
+          </li>
+          <li class="menu-item">
+            <a href="https://www.justice.gov/doj/privacy-policy">Privacy Policy</a>
+          </li>
+          <li class="menu-item">
+            <a href="https://www.justice.gov/legalpolicies">Legal Policies and Disclaimer</a>
+          </li>
+          <li class="menu-item">
+            <a href="https://www.justice.gov/jmd/eeo-program-status-report">No FEAR Act</a>
+          </li>
+          <li class="menu-item">
+            <a href="https://www.ojp.gov/program/freedom-information-act/overview">Freedom of Information Act</a>
+          </li>
+          <li class="menu-item">
+            <a href="https://usa.gov/">USA.gov</a>
+          </li>
+          <li class="menu-item">
+            <a href="https://www.justice.gov/">Justice.gov</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+<script>
+export default {
+  name: "BJSFooter",
+  data() {
+    return {
+      tab: undefined
+    }
+  },
+  methods: {
+    handleTabClick(x) {
+      this.tab === x ? this.tab = undefined : this.tab = x 
+    }
+  }
+}
+</script>
+<style scoped>
+  .usa-footer usa-footer--big {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    box-sizing: inherit;
+    display: block;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+  .usa-footer__primary-section {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    box-sizing: inherit;
+    background: #fcfcfc;
+    border-top: 1px solid #dfe1e2;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+  .footer__wrapper {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    box-sizing: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .usa-footer-primary__top {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    box-sizing: inherit;
+    padding-bottom: 2.5rem;
+  }
+  .usa-footer__agency-heading {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    box-sizing: inherit;
+    font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif;
+    font-weight: 700;
+    margin: 0 0 .625rem;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    display: inline-block;
+    max-width: 66%;
+  }
+  .usa-footer-nav {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .region region-footer-menu {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    box-sizing: inherit;
+  }
+  .region-footer-menu_row {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    box-sizing: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .region-footer-menu_col {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    width: 25%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .usa-footer__primary-content usa-footer__primary-content--collapsible {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    box-sizing: inherit;
+    line-height: 1.2;
+    display: block;
+    border: none;
+    border-top: transparent;
+  }
+  .usa-footer__primary-link {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    box-sizing: inherit;
+    color: #1b1b1b;
+    text-decoration: none;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif;
+    font-size: .98rem;
+    font-weight: 700;
+    padding-bottom: 0;
+    padding-top: 0;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    line-height: 1.27624;
+    margin: 0;
+    background: none;
+    margin-bottom: .5rem;
+  }
+  .add-list-reset usa-list--unstyled {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.2;
+    box-sizing: inherit;
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    padding-top: .75rem;
+  }
+  .usa-footer__secondary-link {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    list-style: none;
+    box-sizing: inherit;
+    padding: 0;
+    margin-bottom: 0;
+    max-width: unset;
+    margin-left: 0;
+    line-height: 1.5;
+    padding-top: 1rem;
+  }
+  .usa-footer__secondary-link a {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    list-style: none;
+    line-height: 1.5;
+    box-sizing: inherit;
+    background-color: transparent;
+    color: #005ea2;
+    text-decoration: none;
+  }
+  .usa-footer__secondary-link a:hover {
+    color: black;
+  }
+  svg.ext {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    list-style: none;
+    line-height: 1.5;
+    color: #005ea2;
+    box-sizing: inherit;
+    width: 14px;
+    height: 14px;
+    padding-right: 0.2em;
+    fill: #727272;
+    font-weight: 900;
+    overflow: hidden;
+  }
+  .usa-sr-only {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #005ea2;
+    box-sizing: inherit;
+    position: absolute;
+    left: -999em;
+    right: auto;
+  }
+
+  .usa-footer__secondary-section {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    box-sizing: inherit;
+    color: #1b1b1b;
+    background-color: #edeff0;
+    padding-bottom: 2.8125rem;
+    padding-top: 1.875rem;
+  }
+  .secondary-container {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    box-sizing: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .usa-footer__logos-container {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    box-sizing: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: .75rem;
+  }
+  .usa-footer-logo.usa-width-one-half {
+    border-right: 1px solid #565c65;
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    position: relative;
+    box-sizing: border-box;
+    border-color: #565c65;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    width: 50%;
+    text-align: left;
+  }
+  .secondary_logos-1 {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    width: 50%;
+  }
+  .usa-footer__partner-logos {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    box-sizing: inherit;
+    max-width: 450px;
+    margin: 0 auto;
+    padding-left: 5.3125rem;
+    padding-top: 0rem;
+  }
+  .logos-grid {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    box-sizing: inherit;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .usa-footer__partner-logo {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    width: 33.33333%;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .usa-footer__partner-logo > a {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    text-align: center;
+    box-sizing: inherit;
+    background-color: transparent;
+    color: #1b1b1b;
+    text-decoration: none;
+  }
+  .usa-footer .usa-footer-logo img {
+    max-width: 450px;
+    width: 100%;
+  }
+  .usa-footer__partner-logo img {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #1b1b1b;
+    box-sizing: inherit;
+    border: 0;
+    border-style: none;
+    max-width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 100%;
+  }
+  .usa-footer-contact-links {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    box-sizing: inherit;
+  }
+  .usa-footer-contact-heading {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #1b1b1b;
+    font-style: normal;
+    box-sizing: inherit;
+    line-height: 1.6;
+    max-width: 100%;
+    font-size: 0.9375rem;
+    margin: 0 auto;
+    padding-bottom: .1875rem;
+    text-align: center;
+  }
+  .wide-nav {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    box-sizing: inherit;
+  }
+  .menu--secondary-footer-link-menu {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    box-sizing: inherit;
+    display: block;
+  }
+  .visually-hidden {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(1px,1px,1px,1px);
+    width: 1px;
+    height: 1px;
+    word-wrap: normal;
+  }
+  .menu--secondary-footer-link-menu ul {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    color: #1b1b1b;
+    box-sizing: inherit;
+    list-style-position: inside;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .menu--secondary-footer-link-menu li:first-child {
+    border-left: none;
+    padding-left: 0;
+  }
+  .menu--secondary-footer-link-menu li {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    color: #1b1b1b;
+    list-style-position: inside;
+    box-sizing: inherit;
+    list-style-type: none;
+    line-height: 3rem;
+    border-left: solid 1px black;
+    display: inline;
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+  .menu--secondary-footer-link-menu a {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    list-style-position: inside;
+    list-style-type: none;
+    line-height: 3rem;
+    box-sizing: inherit;
+    background-color: transparent;
+    text-decoration: none;
+    color: #1a4480;
+    font-size: 0.9375rem;
+    display: inline-block;
+  }
+
+  @media (max-width: 1024px) {
+    .footer__wrapper {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .region-footer-menu_col {
+      width: 50%;
+      padding-bottom: 2rem;
+    }
+    .usa-footer__logos-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .usa-footer-logo.usa-width-one-half {
+      border-right: none;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .usa-footer__partner-logos {
+      padding-left: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .secondary-container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .menu--secondary-footer-link-menu li {
+      display: block;
+      border-left: none;
+      text-align: left;
+      padding-left: 0;
+    }
+    .secondary_logos-1 {
+      width: 100%;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+    }
+    .usa-footer__secondary-section {
+      padding-bottom: 3.5rem;
+    }
+  }
+
+  @media (min-width: 481px) {
+    .footer__social {
+      -webkit-text-size-adjust: 100%;
+      font-feature-settings: "kern" 1;
+      font-kerning: normal;
+      color: #1b1b1b;
+      font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+      font-size: .99rem;
+      line-height: 1.6;
+      box-sizing: inherit;
+      padding-bottom: 1.9375rem;
+      display: flex;
+      position: absolute;
+      padding-top: 0;
+      right: 30px;
+      top: 0;
+    }
+    .usa-footer .footer__social > a {
+      -webkit-text-size-adjust: 100%;
+      font-feature-settings: "kern" 1;
+      font-kerning: normal;
+      font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+      font-size: .99rem;
+      line-height: 1.6;
+      box-sizing: inherit;
+      background-color: transparent;
+      color: #005ea2;
+      margin-right: 1rem;
+      text-decoration: none;
+      display: flex;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .usa-footer-primary__top {
+      padding-bottom: 2.5rem;
+    }
+    .region-footer-menu_col {
+      width: 100%;
+      padding-bottom: 0;
+    }
+    .usa-footer__primary-content {
+      border-top: 1px solid #13171f;
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+    .usa-footer__primary-link {
+      font-feature-settings: "kern" 1;
+      font-kerning: normal;
+      box-sizing: inherit;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      color: #1b1b1b;
+      text-decoration: none;
+      font-family: Merriweather Web,Georgia,Cambria,Times New Roman,Times,serif;
+      font-size: .98rem;
+      font-weight: 700;
+      -webkit-box-align: center;
+      align-items: center;
+      display: flex;
+      -webkit-box-pack: start;
+      justify-content: flex-start;
+      background-position: calc(100% - 15px) center;
+      background-size: 0.75rem;
+      line-height: 1.27624;
+      margin: 0;
+      background-image: url(/themes/custom/ojp/ojp_patternlab/source/img/plus.svg);
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+    .usa-list--unstyled {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .h4-open {
+      background-image: url('~@/assets/minus.svg')
+    }
+    .h4-close {
+      background-image: url('~@/assets/plus.svg')
+    }
+    .mobile-open {
+      display: block;
+    }
+    .mobile-hide {
+      display: none;
+    }
+    .usa-footer__secondary-link {
+      padding-top: 0;
+      padding-bottom: 1.25rem;
+    }
+    .footer__social {
+      font-feature-settings: "kern" 1;
+      font-kerning: normal;
+      color: #1b1b1b;
+      font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+      font-size: .99rem;
+      line-height: 1.6;
+      box-sizing: inherit;
+      padding-bottom: 1.9375rem;
+      padding-top: 1.9375rem;
+      display: flex;
+    }
+    .usa-footer .footer__social > a {
+      font-feature-settings: "kern" 1;
+      font-kerning: normal;
+      font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+      font-size: .99rem;
+      line-height: 1.6;
+      box-sizing: inherit;
+      background-color: transparent;
+      color: #005ea2;
+      margin-right: 1rem;
+      text-decoration: none;
+      display: flex;
+    }
+    .usa-footer .footer__social > a > img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+</style>
+
+  

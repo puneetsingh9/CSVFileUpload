@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome To TARP | Bureau of Justice Statistics</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/all.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style1.css}" />
+    <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+<body>
+  
+    
+    
+    <div th:replace="fragments/header :: header"></div>
+ <div class="main-block">
+      <div class="block-item left">
+        <h1>Welcome to TARP.</h1>
+        <p><small> Please enter email address and choose the type of data visualization desired:</small>
+        </p>
+      </div>
+      <div class="block-item right">
+        <form
+            role="form"
+            method="post"
+            th:action="@{/screen1/save}"
+            th:object="${processInitialForm}"
+         >
+            
+            <label>E-mail:</label>
+            <input type="email" th:field = "*{email}" />
+            <br />
+           
+            <label>Data Visualization:</label>
+            <select th:field="*{dataVisualization}">
+                <option th:each="p : ${listDataVisualization}" th:value="${p}" th:text="${p}"></option>
+            </select>
+            <br />
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+</html>

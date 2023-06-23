@@ -1,0 +1,136 @@
+<header th:fragment="header" class="usa-header usa-header--extended" id="header">
+    <div class="usa-navbar">
+      <div class="region region-header">
+        <div class="usa-logo" id="logo">
+          <div style="align-items: center; display: flex;">
+            <div class="ojp-seal">
+              <a href="https://www.ojp.gov" accesskey="1" title="Office of Justice Programs" aria-label="Office of Justice Programs">
+                <img src="@/assets/OJP-seal.svg" alt="Office of Justice Programs seal" height="98" width="98">
+              </a>
+            </div>
+            <div class="ojp-office-logo">
+              <a href="https://bjs.ojp.gov" accesskey="2" title="Home" aria-label="Home">
+                <img src="@/assets/bjs-logo.svg" alt="Home">
+              </a>
+            </div>
+          </div>
+          <div class="header-text">
+            <span>TARP</span>
+            <span style="display: block; font-size: 1rem">Law Enforcement Agency Reported Crime Analysis Tool</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<script>
+export default {
+  name: "BJSHeader"
+}
+</script>
+<style scoped>
+  .header-text {
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;nn
+    color: white;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    width: 100%;
+    text-align: right;
+    font-size:2rem;
+  }
+  .usa-header {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    box-sizing: inherit;
+    display: block;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    z-index: 300;
+    padding-top: 0;
+    background-color: #112f4e;
+  }
+  .usa-navbar {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    box-sizing: inherit;
+    border-bottom: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 64rem;
+    display: block;
+    overflow: auto;
+    height: auto;
+    padding: .5rem 1rem .25rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .region-header {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .99rem;
+    line-height: 1.6;
+    box-sizing: inherit;
+    flex: 1 0 0;
+  }
+  .usa-logo {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    box-sizing: inherit;
+    line-height: 1.2;
+    font-size: 1.99rem;
+    margin: 1rem .9375rem 1rem 0;
+    display: flex;
+    height: 100%;
+    min-height: 80px;
+    max-width: unset;
+    margin-right: 20.25rem;
+    width: 100%;
+    flex-direction: column;
+  }
+  .ojp-seal {
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    color: #1b1b1b;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    line-height: 1.2;
+    font-size: 1.99rem;
+    box-sizing: inherit;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-right: 1rem;
+    min-width: 98px;
+  }
+  @media (min-width: 960px) {
+    .usa-navbar {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .usa-logo {
+      flex-direction: row;
+      -webkit-box-align: center;
+      align-items: center;
+    }
+  }
+</style>

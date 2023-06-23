@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Data Upload | Bureau of Justice Statistics</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+   <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/all.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style2.css}" />
+    <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+</head>
+<body>
+
+<div class="main-block">
+      <div class="block-item left">
+        <h1>Upload Document.</h1>
+        <p><small> Choose the document you intend to upload.</small>
+        </p>
+      </div>
+      
+      <div class="block-item right">
+		<div class="container" style="max-width: 500px">
+
+  <form
+    id="uploadForm"
+    method="post"
+    th:action="@{/files/upload}"
+    enctype="multipart/form-data">
+    <input id="input-file" type="file" name="file" />
+    <button class="btn btn-sm btn-outline-success float-right" type="submit">
+      Upload
+    </button>
+  </form>
+
+ 
+</div>
+		
+	             
+      </div>
+    </div>
+		
+
+
+</body>
+</html>
